@@ -1,3 +1,4 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 //! SeekSage native desktop console, built on `eframe` + `egui`.
 
 use std::collections::{HashMap, HashSet, VecDeque};
@@ -3798,11 +3799,12 @@ fn main() -> eframe::Result {
         .with_title("SeekSage · Native Search Console")
         .with_inner_size([1280.0, 820.0])
         .with_min_inner_size([1020.0, 640.0])
-        .with_maximized(true);
+        .with_resizable(true);
     eframe::run_native(
         "SeekSage",
         eframe::NativeOptions {
             viewport: options,
+			centered: true,
             ..Default::default()
         },
         Box::new(|_cc| Ok(Box::new(SeekSageApp::default()))),
