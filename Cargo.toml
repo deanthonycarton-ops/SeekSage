@@ -1,0 +1,35 @@
+﻿[package]
+name = "seeksage"
+version = "0.1.0"
+edition = "2021"
+description = "Microsecond local code and log search engine with memory-resident inverted index and LLM context packing."
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/deanthonycarton-ops/seeksage"
+documentation = "https://docs.rs/seeksage"
+keywords = ["search", "index", "gui", "logs", "llm"]
+categories = ["command-line-utilities", "development-tools", "gui", "text-processing"]
+exclude = ["scratch/*", ".seeksage_cache*", "*.log"]
+
+[lib]
+name = "seeksage"
+path = "src/lib.rs"
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "seeksage"
+path = "src/main.rs"
+
+[[bin]]
+name = "seeksage-gui"
+path = "src/bin/gui.rs"
+
+[dependencies]
+eframe = "0.29"
+# Native OS save dialog for the GUI export path picker (COM common dialog on
+# Windows, xdg-portal on Linux). Pulled in by the `seeksage-gui` bin only.
+rfd = "0.17.2"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
