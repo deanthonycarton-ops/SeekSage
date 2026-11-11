@@ -1,7 +1,10 @@
 ﻿# SeekSage
 
 [![Download Windows Executable](https://img.shields.io/badge/Download-seeksage--gui.exe%20(v0.1.0--beta)-2ea44f?style=for-the-badge&logo=windows)](https://github.com/deanthonycarton-ops/seeksage/releases/download/v0.1.0-beta/seeksage-gui.exe)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](LICENSE)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)
+
+![SeekSage GUI Preview](docs/assets/seeksage.png)
+](LICENSE)
 
 
 **Microsecond local code & log search engine with one-click LLM context packing.**
@@ -36,4 +39,5 @@ Run the full test suite:
 ## License
 
 GPL-3.0-only
+
 
