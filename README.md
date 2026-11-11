@@ -1,6 +1,6 @@
 ﻿# SeekSage
 
-[![Download Windows Executable](https://img.shields.io/badge/Download-seeksage--gui.exe%20(v0.1.0--beta)-2ea44f?style=for-the-badge&logo=windows)](https://github.com/deanthonycarton-ops/seeksage/releases/download/v0.1.0-beta/seeksage-gui.exe)
+[![Download Windows Executable](https://img.shields.io/badge/Download-seeksage--gui.exe%20(v0.1.0--beta)-2ea44f?style=for-the-badge&logo=windows)](https://github.com/deanthonycarton-ops/seeksage/releases/download/v0.1.0-beta/SeekSage.exe)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](LICENSE)
 
 ![SeekSage GUI Preview](docs/assets/seeksage.png)
@@ -24,11 +24,11 @@ Line-by-line scanners (`grep`, `ripgrep`) rescan the disk or page cache on every
 
 Run the native desktop console:
 
-    cargo run --release --bin seeksage-gui
+    cargo run --release --bin SeekSage
 
 Or pass a target directory on launch:
 
-    cargo run --release --bin seeksage-gui -- "C:\path\to\project"
+    cargo run --release --bin SeekSage -- "C:\path\to\project"
 
 Run the full test suite:
 

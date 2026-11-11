@@ -38,11 +38,11 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Build Release
-        run: cargo build --release --bin seeksage-gui
+        run: cargo build --release --bin SeekSage
 
       - name: Upload Binary to Release
         uses: softprops/action-gh-release@v2
         with:
-          files: target/release/seeksage-gui.exe
+          files: target/release/SeekSage.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

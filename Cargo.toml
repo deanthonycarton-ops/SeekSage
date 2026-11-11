@@ -2,6 +2,7 @@
 name = "seeksage"
 version = "0.1.0"
 edition = "2021"
+default-run = "SeekSage"
 description = "Microsecond local code and log search engine with memory-resident inverted index and LLM context packing."
 license = "GPL-3.0-only"
 readme = "README.md"
@@ -17,11 +18,11 @@ path = "src/lib.rs"
 crate-type = ["rlib", "cdylib"]
 
 [[bin]]
-name = "seeksage"
+name = "seeksage-cli"
 path = "src/main.rs"
 
 [[bin]]
-name = "seeksage-gui"
+name = "SeekSage"
 path = "src/bin/gui.rs"
 
 [dependencies]
@@ -33,3 +34,6 @@ rfd = "0.17.2"
 [profile.release]
 codegen-units = 1
 lto = "fat"
+
+[build-dependencies]
+winresource = "0.1"
