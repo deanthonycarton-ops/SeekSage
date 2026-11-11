@@ -1,13 +1,11 @@
 ﻿# SeekSage
 
 [![Download Windows Executable](https://img.shields.io/badge/Download-seeksage--gui.exe%20(v0.1.0--beta)-2ea44f?style=for-the-badge&logo=windows)](https://github.com/deanthonycarton-ops/seeksage/releases/download/v0.1.0-beta/seeksage-gui.exe)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](LICENSE)
 
 ![SeekSage GUI Preview](docs/assets/seeksage.png)
-](LICENSE)
 
-
-**Microsecond local code & log search engine with one-click LLM context packing.**
+**Microsecond local code & log search engine with one-click LLM context packing.**  
 Built from scratch in pure Rust with a lock-free ingestion pipeline, memory-resident inverted index, C-ABI FFI surface, and native `egui` desktop console.
 
 ## Why SeekSage?
